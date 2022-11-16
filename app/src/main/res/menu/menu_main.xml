@@ -6,10 +6,10 @@
         android:id="@+id/action_second"
         android:orderInCategory="200"
         app:showAsAction="ifRoom"
-        android:title="Second" />
+        android:title="@string/second" />
     <item
         android:id="@+id/action_first"
         android:orderInCategory="100"
         app:showAsAction="ifRoom"
-        android:title="First" />
+        android:title="@string/first" />
 </menu>
