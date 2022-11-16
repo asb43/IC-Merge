@@ -4,12 +4,15 @@
     tools:context="edu.cascadia.merge.MainActivity">
     <item
         android:id="@+id/action_second"
+        android:icon="@drawable/ic_frag_2"
         android:orderInCategory="200"
-        app:showAsAction="ifRoom"
-        android:title="@string/second" />
+        android:title="@string/second"
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_first"
+        android:icon="@drawable/ic_frag_1"
         android:orderInCategory="100"
-        app:showAsAction="ifRoom"
-        android:title="@string/first" />
+        android:title="@string/first"
+        app:showAsAction="ifRoom" />
+    <item android:title="@string/item" />
 </menu>

@@ -12,4 +12,5 @@
     <string name="hello_third_fragment">Hello third fragment</string>
     <string name="second">Second</string>
     <string name="first">First</string>
+    <string name="item">Item</string>
 </resources>
