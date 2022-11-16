@@ -6,21 +6,21 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import edu.cascadia.merge.databinding.FragmentSecondBinding
+import edu.cascadia.merge.databinding.FragmentThirdBinding
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
  */
-private lateinit var binding: FragmentSecondBinding
+private lateinit var binding: FragmentThirdBinding
 
-class SecondFragment : Fragment() {
+class ThirdFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
-        binding = FragmentSecondBinding.inflate(inflater, container, false)
+        binding = FragmentThirdBinding.inflate(inflater, container, false)
         return binding.root
 
     }
@@ -29,11 +29,10 @@ class SecondFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonPrev.setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
-
+            findNavController().navigate(R.id.action_thirdFragment_to_SecondFragment)
         }
         binding.buttonNext.setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_thirdFragment)
+            findNavController().navigate(R.id.action_thirdFragment_to_FirstFragment)
         }
     }
 }

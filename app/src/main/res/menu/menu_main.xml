@@ -12,7 +12,15 @@
         android:id="@+id/action_first"
         android:icon="@drawable/ic_frag_1"
         android:orderInCategory="100"
+
         android:title="@string/first"
         app:showAsAction="ifRoom" />
-    <item android:title="@string/item" />
+
+    <item
+        android:id="@+id/action_third"
+        android:icon="@drawable/ic_frag_3"
+        android:orderInCategory="300"
+        android:title="Third"
+        app:showAsAction="ifRoom" />
+
 </menu>
